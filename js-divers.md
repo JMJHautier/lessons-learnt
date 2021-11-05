@@ -17,9 +17,23 @@ C'est pour ça qu'on utilise plutot le spread operator, qui CREE un nouveau tabl
 item.concat(4); // équivalent à [...item, 4]
 ```
 
-===
+=====
 
 .focus() a besoin de l'attribut tabIndex dans l'élément concerné afin de fonctionner
 tabindex = 0 signifie que l'élément peut être focused en utilisant tab au clavier
 tabindex = -1 signifie que l'élément ne peut aps être focused en utilisant tab au clavier
-===
+=====
+
+- on ne peut pas utiliser le spread operator pour mettre à jour un objet précis dans un array.
+  Il faut mapper
+
+```javascript
+const updatedTask = tasks.map((task) => {
+  if (parseInt(task.id, 10) === parseInt(id, 10)) {
+    return { ...task, done: !task.done };
+  }
+  return task;
+});
+
+this.setState({ tasks: updatedTask });
+```
