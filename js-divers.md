@@ -37,3 +37,31 @@ const updatedTask = tasks.map((task) => {
 
 this.setState({ tasks: updatedTask });
 ```
+
+=======
+on ne peut (plus) obtenir le nom d'une fonction en JS quand on est à l'itnérieur.
+Je voulais le faire pour rendre mes console.log plus claires :(
+source: Can I get the name of the currently running function in JavaScript?https://stackoverflow.com/questions/1013239/can-i-get-the-name-of-the-currently-running-function-in-javascript
+
+=======
+
+# Operator precedence
+
+une notion intéressante, qui clarifie dans quel ordre les opérateurs sont évalués.
+quelques sous notions clés:
+**precedence**
+tous les operators sont hierarchisés dans un ordre de "précédencee". Par ex, `*` a une plus haute précédence que `+`.
+Mais parfois, la précédence est la même, ou alors il y a des groupes faits avec des parenthèses(met la précédence au max), et dans ces cas, il faut regarder la notion suivante pour bien comprendre ce qui se passe:
+**associativity**
+si `a OP1 b OP2 c`
+
+- right-associativity signifie que a OPA1 (b OP2 c)
+  exemples de right-associativity: `=` (assignemnt operators) `? : `(ternay operators),
+- left-associativity signifie que `(a OPA1 b) OP2 c`
+  exemples de left-associativity: les arithmetic operators (`+ - \* etc.`), `<, <=, >`
+  MAIS attention, quelque soit l'associativity, l'évaluation des éléments se fait toujours de gauche à droite, ce qui nous amène à la notion suivant....
+
+**short-circuting**
+le fait d'arrêter net une évaluation si l'expression de gauche est falsy/trusy (selon l'opérateur)
+par ex, `&&` short-circuite la sub expression à droite, si celle de gauche est falsy, et renvoie l'expression de gauche
+autres exemples de short-cuiting: `||` `??` `a?.bc`
