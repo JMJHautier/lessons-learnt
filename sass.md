@@ -1,8 +1,10 @@
-# alléger une couleur
+# alléger/assombrir une couleur
+
 ```css
 @use "sass:color";
 
 $color-confirm-light: color.adjust($color-text-alt, $lightness: 5%);
+$color-confirm-light: color.adjust($color-text-alt, $blackness: 5%);
 ```
 
 # mixin modal
@@ -35,16 +37,17 @@ $color-confirm-light: color.adjust($color-text-alt, $lightness: 5%);
     align-items: center;
     filter: drop-shadow(0px 8px 8px lighten(black, 50%));
   }
-  ```
+```
+
 # mixin avec paramètres et valeur par défaut:
 
- ```css
+```css
 @mixin cardMobile(
-  $width: 12.5em,
-  $height: 15em,
+ $width: 12.5em,
+ $height: 15em,
 ) {
-  .card {
-    width: $width;
-    height: $height;
-    }
-  ```
+ .card {
+   width: $width;
+   height: $height;
+   }
+```

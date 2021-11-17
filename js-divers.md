@@ -147,3 +147,11 @@ for (let i = randomDatabase.length - 1; i > 0; i--) {
 
 source: memoria / pickOrder()
 aussi: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+
+============
+
+# fonction fléchée
+
+dans une fonction fléchée, this ne se comporte pas de la même manière que dans une fonction avec mot clé.
+en front, t his renvoie alors à l'objet window. En back, il renvoie à un object vide.
+Car il n'y a pas de contexte!
