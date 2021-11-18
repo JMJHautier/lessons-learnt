@@ -1,4 +1,4 @@
-- en REACT, on préfère les champs controlés pour avoir accès au state de partout.
+- en REACT, on préfère les champs controlés pour avoir accès au state de partout. Dans les champs controlés, le state est la seule source de vérité
 
 - on met dans le state les données bruts qui vont être manipulés
 
@@ -35,3 +35,14 @@ quand le state est mis à jour avec la même valeur, IL NE TRIGGER PAS DE REREND
 J'ai contourné le problème en ajoutant un compteur, qui est mis à jour quand les valeurs ne bougent pas...
 source: react doc pour useState: https://reactjs.org/docs/hooks-reference.html#usestate
 MDN pour Object.is: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is#description
+
+================
+Il est INTERDIT de changer directement la valeur d'une variable du state : je dois utiliser la fonction setNbUsers. Attention, "setNbUsers(nbUsers++)" va modifier la valeur de nbUsers ("nbUsers ++" est équivalent à "nbUsers = nbUsers + 1") : interdit.
+
+====================
+
+Quand un props ou un state change, c'est tout le composant qui contient ce props ou ce state qui change! pas juste les composants concernés!
+
+========================
+
+- il vaut mieux faire le reset d'une variable du state dans l'objet renvoyé par l'action. Si on le met par ex dans le handleSubmit, on peut avoir des problèmes liés à l'asynchronie.

@@ -17,12 +17,12 @@ C'est pour ça qu'on utilise plutot le spread operator, qui CREE un nouveau tabl
 item.concat(4); // équivalent à [...item, 4]
 ```
 
-=====
+==================
 
 .focus() a besoin de l'attribut tabIndex dans l'élément concerné afin de fonctionner
 tabindex = 0 signifie que l'élément peut être focused en utilisant tab au clavier
 tabindex = -1 signifie que l'élément ne peut aps être focused en utilisant tab au clavier
-=====
+==================
 
 - on ne peut pas utiliser le spread operator pour mettre à jour un objet précis dans un array.
   Il faut mapper
@@ -155,3 +155,32 @@ aussi: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-ja
 dans une fonction fléchée, this ne se comporte pas de la même manière que dans une fonction avec mot clé.
 en front, t his renvoie alors à l'objet window. En back, il renvoie à un object vide.
 Car il n'y a pas de contexte!
+
+================
+
+# axios et fetch
+
+différences principales entre axios et fetch:
+
+- permet de se passer de .json (ça parse automatiquement) -json = javascript object notation
+- permet de tout mettre en options sans séparer url
+- # permet de plus facilement 'abort' la requête si elle n'obtient pas de réponse
+
+# DOMPurify
+
+- ne pas oublier d'utiliser DOMPurify pour éviter les attaques XSS!!
+
+# Ref à une variable dans le nom d'une propriété
+
+-Pour faire référence à une variable pour nommer une propriété, il faut utiliser []:
+exemple:
+
+```javascript
+return {
+  ...state,
+  user: {
+    ...state.user,
+    [action.stateToBeUpdated]: action.content,
+  },
+};
+```
