@@ -1,4 +1,4 @@
-- exemple de custom hook:
+# exemple de custom hook:
 
 ```javascript
 import { useState, useEffect } from "react";

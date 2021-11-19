@@ -17,12 +17,13 @@ C'est pour ça qu'on utilise plutot le spread operator, qui CREE un nouveau tabl
 item.concat(4); // équivalent à [...item, 4]
 ```
 
-==================
+---
 
 .focus() a besoin de l'attribut tabIndex dans l'élément concerné afin de fonctionner
 tabindex = 0 signifie que l'élément peut être focused en utilisant tab au clavier
 tabindex = -1 signifie que l'élément ne peut aps être focused en utilisant tab au clavier
-==================
+
+---
 
 - on ne peut pas utiliser le spread operator pour mettre à jour un objet précis dans un array.
   Il faut mapper
@@ -38,7 +39,7 @@ const updatedTask = tasks.map((task) => {
 this.setState({ tasks: updatedTask });
 ```
 
-===============
+---
 
 # lire le nom d'une fonction
 
@@ -46,7 +47,7 @@ on ne peut (plus) obtenir le nom d'une fonction en JS quand on est à l'itnérie
 Je voulais le faire pour rendre mes console.log plus claires :(
 source: Can I get the name of the currently running function in JavaScript?https://stackoverflow.com/questions/1013239/can-i-get-the-name-of-the-currently-running-function-in-javascript
 
-===============
+---
 
 # Operator precedence
 
@@ -69,7 +70,7 @@ le fait d'arrêter net une évaluation si l'expression de gauche est falsy/trusy
 par ex, `&&` short-circuite la sub expression à droite, si celle de gauche est falsy, et renvoie l'expression de gauche
 autres exemples de short-cuiting: `||` `??` `a?.bc`
 
-================
+---
 
 # cloner un array
 
@@ -92,7 +93,7 @@ const copie = original.slice();
 source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from
 https://www.samanthaming.com/tidbits/35-es6-way-to-clone-an-array/
 
-=========================
+---
 
 # comma operator
 
@@ -124,14 +125,14 @@ for (var i = 0, j = 10; i <= j; i++) {
 
 source: https://www.i-programmer.info/programming/javascript/6524-the-confusing-comma-in-javascript.html
 
-=======================
+---
 
 # javascript type juggling
 
 javascript peut transformer des valeurs d'un type à un autre sans qu'on l'aide.
 Par ex, `true` peut être convertie en integer `1`
 
-==========================
+---
 
 # shuffle un array
 
@@ -148,7 +149,7 @@ for (let i = randomDatabase.length - 1; i > 0; i--) {
 source: memoria / pickOrder()
 aussi: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 
-============
+---
 
 # fonction fléchée
 
@@ -156,7 +157,7 @@ dans une fonction fléchée, this ne se comporte pas de la même manière que da
 en front, t his renvoie alors à l'objet window. En back, il renvoie à un object vide.
 Car il n'y a pas de contexte!
 
-================
+---
 
 # axios et fetch
 
@@ -164,7 +165,7 @@ différences principales entre axios et fetch:
 
 - permet de se passer de .json (ça parse automatiquement) -json = javascript object notation
 - permet de tout mettre en options sans séparer url
-- # permet de plus facilement 'abort' la requête si elle n'obtient pas de réponse
+- permet de plus facilement 'abort' la requête si elle n'obtient pas de réponse
 
 # DOMPurify
 

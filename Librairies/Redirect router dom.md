@@ -1,21 +1,25 @@
-## Exemple de redirect
+# Exemple de redirect
+
 ```javascript
 const app = () => {
-return
-{
-      (cardId && isSubmit && isModified.state) && <Redirect to={path}/>}
-}
+  return;
+  {
+    cardId && isSubmit && isModified.state && <Redirect to={path} />;
+  }
+};
 ```
 
-## Redirect en envoyant une donnée dans le state
-1) props dans Redirect
+# Redirect en envoyant une donnée dans le state
+
+1. props dans Redirect
+
 ```javascript
 <Redirect to={{ pathname: /deckEditor/:deckId, state: { editedCardId: cardId } }}/>
 ```
 
-3) récupération dans le composant "deckEditor" 
+3. récupération dans le composant "deckEditor"
 
 ```javascript
-const location = useLocation()
-const editedCardId = location.state?.editedCardId
+const location = useLocation();
+const editedCardId = location.state?.editedCardId;
 ```

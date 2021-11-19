@@ -1,4 +1,4 @@
-## flex shrink/grow/basis
+# flex shrink/grow/basis
 
 - correspond à min/max/opti (en gros... en réalité, c'est une plannification/optimisation de l'espace
 - recommandé d'utiliser les trois ensembles en utilisant le shorthand flex, car ils s'entre-influencent
