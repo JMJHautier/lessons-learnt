@@ -155,3 +155,12 @@ aussi: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-ja
 dans une fonction fléchée, this ne se comporte pas de la même manière que dans une fonction avec mot clé.
 en front, t his renvoie alors à l'objet window. En back, il renvoie à un object vide.
 Car il n'y a pas de contexte!
+
+# spread syntax vs rest parameter
+
+ont l'air exactement pareil mais font l'inverse.
+le rest PARAMETER est un argument de fonction, qui va mettre l'ensemble des arguments dans un tableau
+le spread SYNTAX va "extend" un array dans ses éléments.
+REST = de liste d'éléments à array
+spread = d'array à liste d'éléments
+le REST ne peut être que à la fin
