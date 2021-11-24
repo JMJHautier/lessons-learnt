@@ -1,5 +1,7 @@
 React ne render pas les expressions nulles, false etc.
 
+---
+
 # timeout, je te hais
 
 timeout est chiant à gérer sur react, à cause des re-render qui peuvent en créer à la chaine, ou interrompre les timeout existant
