@@ -195,3 +195,7 @@ return {
   },
 };
 ```
+# avoir les éléments paires uniquement dans un array
+
+utiliser le % avec filter!
+const newArrray = oldArray.filter((element, index) => index%2 === 0) 
