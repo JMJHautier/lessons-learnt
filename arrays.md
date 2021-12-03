@@ -1,4 +1,4 @@
-# swap des valeurs avec le destructuring
+# swap des valeurs avec le destructuring JS
 
 let a = 'b', b = 'a'
 
