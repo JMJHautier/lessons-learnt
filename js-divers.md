@@ -195,7 +195,28 @@ return {
   },
 };
 ```
+
 # avoir les éléments paires uniquement dans un array
 
 utiliser le % avec filter!
-const newArrray = oldArray.filter((element, index) => index%2 === 0) 
+const newArrray = oldArray.filter((element, index) => index%2 === 0)
+
+# mapper un objet
+
+Il n'y a pas de solutions pre-conçu. Voilà ma solution
+
+```javascript
+export const cleanObject = (object)) => {
+  const objectToArray = Object.entries(object)
+
+  const mapTheArray = objectToArray.map(([key, value]) => {
+    const changedKey = key*2
+    const changedValue = value*2
+    return [changedKey, changedValue]
+  })
+
+  const arrayToObject = mapTheArray.reduce((previousValue, currentValue) => ({ ...previousValue, [currentValue[0]]: currentValue[1] }), { [maptheArray[0][0]]: maptheArray[0][1] })
+
+  return arrayToObject
+}
+```
