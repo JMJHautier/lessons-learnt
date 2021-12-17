@@ -220,3 +220,7 @@ export const cleanObject = (object)) => {
   return arrayToObject
 }
 ```
+
+# Singlethread
+
+ne pas oublier que JS est single thread... De base, JS est incapable d'executer des instructions de façon asynchrone. Il a fallu des technologies comme AJAX pour changer la donne. 
