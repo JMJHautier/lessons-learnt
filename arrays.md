@@ -17,7 +17,7 @@ const isMyObjectInMyArray = myArray.some(
 
 # compter les occurences d'une valeur dans un array
 
-filtrer l'array sur la base de cette valeur, puis regarder son length
+filtrer l'array sur la base de cette valeur, puis regarder son length.
 
 ```javascript
 const numberOfCorrect = database.filter(
