@@ -7,6 +7,7 @@ $color-confirm-light: color.adjust($color-text-alt, $lightness: 5%);
 $color-confirm-light: color.adjust($color-text-alt, $blackness: 5%);
 ```
 
+
 # mixin modal
 
 ```css
