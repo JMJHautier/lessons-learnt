@@ -14,3 +14,8 @@ Dynamically typed language vs static-typed language = Dynamically-typed language
 static vs dyanmic component|block|element = element rendu sans passer par une requête serveur?
 
 https://www.javatpoint.com/compile-time-vs-runtime
+
+
+# binary
+Le binaire est là à cause des transistors ;)
+compter en binary: https://www.youtube.com/watch?v=puaaRoWL-Ec
