@@ -12,3 +12,26 @@ box-shadow: 3px 3px red, -1em 0 0.4em olive;
 ---
 z-index ne marche pas avec display:static! avec tous les autres ça marche :) 
 source: https://stackoverflow.com/questions/9191803/why-does-z-index-not-work
+
+---
+# Variables dans CSS vanilla?
+
+en fait, ce sont plutot des propriétés, mais ça marche!
+```css
+html {
+  --color-text: black;
+  --color-background: lightgray;
+  --color-primary: rebeccapurple;
+  --gutter: 16px;
+}
+p {
+  color: var(--color-text);
+  margin-bottom: var(--gutter);
+}
+.title {
+  color: var(--color-primary);
+}
+```
+
+plus d'explications pour les rendre globales: 
+https://www.joshwcomeau.com/css/css-variables-for-react-devs/
