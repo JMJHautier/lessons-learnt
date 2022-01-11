@@ -35,3 +35,14 @@ p {
 
 plus d'explications pour les rendre globales: 
 https://www.joshwcomeau.com/css/css-variables-for-react-devs/
+
+
+# Unités
+
+# min max clamp
+
+min(50%, 700px): va choisir la plus petite de ces valeurs. 
+max(50%, 700px): va choisir la plus grande de ces valeurs
+clamp(300px, 50%, 800px): mini, idéal, max
+
+exemple pour un titre: clamp(2rem, 5vw, 5rem)
