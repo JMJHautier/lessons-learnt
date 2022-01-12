@@ -46,3 +46,13 @@ max(50%, 700px): va choisir la plus grande de ces valeurs
 clamp(300px, 50%, 800px): mini, idéal, max
 
 exemple pour un titre: clamp(2rem, 5vw, 5rem)
+
+Attention, en faisant ça avec des margins et borderbox, on a parfois des droles de suprises (composant devenant de plus en plus petits... 
+
+# Position absolute
+
+Une position absoltue se situe toujours **par rapport à l'ancêtre le plus proche ayant position:relative**!
+attention, par défaut, les composants sont en position:static! il fautdra donc le préciser!! c'est la différence avec position:fixed, qui se positionne par rapport à root.
+A noter que position:relative se positionne par rarpport  à lui même, en restant dans le flot du doc: 
+https://css-irl.info/finding-an-elements-nearest-relative-positioned-ancestor/
+https://developer.mozilla.org/en-US/docs/Web/CSS/position
