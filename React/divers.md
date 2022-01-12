@@ -30,3 +30,8 @@ useEffect(() => {
 ```
 
 une ressource sur le sujet: https://stackoverflow.com/questions/57995978/why-is-cleartimeout-not-clearing-the-timeout-in-this-react-component
+
+# Cannot flush updates when React is already rendering
+
+Attention, on doit éviter de modifier le DOM avant que le composant soit monté (par exemple en callant des if en dehors de useEffect ;)) 
+https://stackoverflow.com/questions/58040892/cannot-flush-updates-when-react-is-already-rendering
