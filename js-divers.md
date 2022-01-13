@@ -225,4 +225,9 @@ export const cleanObject = (object)) => {
 
 ne pas oublier que JS est single thread... De base, JS est incapable d'executer des instructions de façon asynchrone. Il a fallu des technologies comme AJAX pour changer la donne.
 
+# Blob
+
+Les blobs sont des objets javascript qui ont un MIME aps supporté par Javascript directement.
+`new Blob(contenu, MIME)` crée un blob: le contenu est un array concanné en string, le MIME est le MIME ;) 
+https://developer.mozilla.org/en-US/docs/Web/API/Blob
 
