@@ -39,3 +39,14 @@ loadPosts,
 ---
 
 - le concept "d'effet de bord" est important. C'est tout ce qui se passe après que les composants soient montés. React aime que bcp de choses soient gérés dans ces effets de bord, afin d'éviter des re-render à répétition (par ex, avec changement du titre ! )
+
+# le return statement
+
+on peut ajouter un return à useEffect. C'est un "clean up"
+- il n'est pas rendu lors du premier render
+- il est ensuite rendu à chaque re-render, en fonction des dependencies
+MAIS avant le corps du useEffect.
+
+En gros, il "nettoie" ce qui doit être nettoyé avant l'arrivée du prochain render. Je ne l'ai pas encore utilisé, donc à voir! 
+
+
