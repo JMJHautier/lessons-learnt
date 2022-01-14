@@ -176,6 +176,8 @@ différences principales entre axios et fetch:
 - permet de se passer de .json (ça parse automatiquement) -json = javascript object notation
 - permet de tout mettre en options sans séparer url
 - permet de plus facilement 'abort' la requête si elle n'obtient pas de réponse
+- permet de configurer le lancement d'exception en fonction du code renvoyé par l'API (les statuts 500  ne provoque pas d'excpeption avec fetch)
+ https://axios-http.com/docs/handling_errors
 
 # DOMPurify
 
