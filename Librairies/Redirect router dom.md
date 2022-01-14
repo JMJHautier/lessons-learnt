@@ -23,3 +23,18 @@ const app = () => {
 const location = useLocation();
 const editedCardId = location.state?.editedCardId;
 ```
+
+# Redirect dans un useEffect
+```javascript
+import { useHistory } from 'react-router-dom'
+
+  const history = useHistory()
+
+useEffect(() => {
+    if (lastAction === DELETE_DECK) {
+      history.push('/profile')
+    }
+  }, [lastAction])
+ 
+ ```
+ https://stackoverflow.com/questions/69722786/react-how-to-use-redirect-inside-hook-useeffect
