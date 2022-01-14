@@ -41,12 +41,29 @@ Car il n'y a pas de contexte!
 # spread syntax vs rest parameter
 
 ont l'air exactement pareil mais font l'inverse.
-le rest PARAMETER est un argument de fonction, qui va mettre l'ensemble des arguments dans un tableau
+
+le rest PARAMETER est un argument de fonction, qui va mettre l'ensemble des arguments dans un tableau.
+
 le spread SYNTAX va "extend" un array dans ses éléments.
-REST = de liste d'éléments à array
-spread = d'array à liste d'éléments
-le REST ne peut être que à la fin
-=======
+REST crée un array à partir d'un ensemble d'arguments
+
+spread transforme un array (ou un string, ou un objet) en une liste d'éléments
+
+le REST ne peut être que à la fin: 
+```javascript
+function myFun(a,  b, ...manyMoreArgs) {
+  console.log("a", a)
+  console.log("b", b)
+  console.log("manyMoreArgs", manyMoreArgs)
+}
+
+myFun("one", "two", "three", "four", "five", "six")
+
+// Console Output:
+// a, one
+// b, two
+// manyMoreArgs, ["three", "four", "five", "six"]
+```
 
 # Ref à une variable dans le nom d'une propriété
 
