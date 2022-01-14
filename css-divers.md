@@ -56,3 +56,7 @@ attention, par défaut, les composants sont en position:static! il fautdra donc 
 A noter que position:relative se positionne par rarpport  à lui même, en restant dans le flot du doc: 
 https://css-irl.info/finding-an-elements-nearest-relative-positioned-ancestor/
 https://developer.mozilla.org/en-US/docs/Web/CSS/position
+
+#last-of-type / first-of-type
+
+très pratique, peut être utilisé sur des class
