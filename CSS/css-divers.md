@@ -57,6 +57,10 @@ A noter que position:relative se positionne par rarpport  à lui même, en resta
 https://css-irl.info/finding-an-elements-nearest-relative-positioned-ancestor/
 https://developer.mozilla.org/en-US/docs/Web/CSS/position
 
-#last-of-type / first-of-type
+# last-of-type / first-of-type
 
 très pratique, peut être utilisé sur des class
+
+# calculer la spécificité
+
+https://www.w3.org/TR/CSS2/cascade.html#specificity
