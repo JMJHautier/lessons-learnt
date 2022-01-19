@@ -35,3 +35,12 @@ une ressource sur le sujet: https://stackoverflow.com/questions/57995978/why-is-
 
 Attention, on doit éviter de modifier le DOM avant que le composant soit monté (par exemple en callant des if en dehors de useEffect ;)) 
 https://stackoverflow.com/questions/58040892/cannot-flush-updates-when-react-is-already-rendering
+
+# intégrer des images
+
+Pour le src des images, si on utilise un lien relatif, React considère que le dossier "public" est la racine! Donc pas besoin d'ajouter pleins de ../../.. pour sortir des dossiers composants ;) 
+
+il suffit  de mettre son image dans /public puis, dans ses composants: 
+```
+<img src="/image.jpg"/>
+```
