@@ -1,0 +1,8 @@
+c'est génial! j'avais essayé d'avoir des onscroll events en utilisant scrollY, clientHeight etc. mais ça ne marchait pas. 
+
+intersectionObserver est extrêmement puissant et intuitif. 
+
+la MDN est très claire quoi qu'un peu aride: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+pour un exemple, voir Kevin Powell. 
+
+
