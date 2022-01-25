@@ -64,3 +64,7 @@ très pratique, peut être utilisé sur des class
 # calculer la spécificité
 
 https://www.w3.org/TR/CSS2/cascade.html#specificity
+
+# replaced elements
+iframe, video, embed, img... ce sont des éléments qui ne sont pas impactés par le CSS. Il faut mettre un wrapper... 
+On peut juste impacter la position de l'objet à l'intérieur de ces tags (par ex: objec-fit) 
