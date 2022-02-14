@@ -33,3 +33,22 @@ export const cleanObject = (object)) => {
   return arrayToObject
 }
 ```
+
+# Créer un array d'objet à partir d'un objet
+
+```javascript
+var data = {
+    a:{"0": "1"},
+    b:{"1": "2"},
+    c:{"2": "3"},
+    d:{"3": "4"}
+};
+var newArrayDataOfOjbect = Object.values(data)
+// résultats: 
+// data = [ 
+   // {"0": "1"},
+    // {"1": "2"},
+    // {"2": "3"},
+    // {"3": "4"}
+]
+```
