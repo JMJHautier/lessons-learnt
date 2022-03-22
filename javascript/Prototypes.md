@@ -5,3 +5,25 @@ C'est une propriété présent dans tout object javascript. On peut y accéder m
 # Attention aux modifications de prototypes !
 
 https://flaviocopes.com/javascript-why-not-modify-object-prototype/
+
+# constructeur
+
+chaque fonction a une propriété "prototype" qui est utilisé quand elles sont invoqués comme constructeur
+
+Mais attention! cette propriété est inexistante pour les arrow functions, qui ne peuvent donc pas être constructeur
+
+```javascript
+  
+    const func = () => {
+      console.log("hello")
+    }
+    console.log(func.prototype)// undefined
+    console.log(Object.getPrototypeOf(func)) // l'élément suivant dans le prototype chain ;) 
+
+  {
+  function sayHello() {
+    console.log('hello');
+  }
+  
+  console.log(sayHello.prototype);// constructeur
+  ```
