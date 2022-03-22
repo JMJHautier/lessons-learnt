@@ -61,3 +61,7 @@ alone(); // logue myObject
 # dans une class
 
 this est l'objet class
+
+# dans une fonction constructeur
+
+this est le nouvel objet créé via new
