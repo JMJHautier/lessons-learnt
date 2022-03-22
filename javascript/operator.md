@@ -52,3 +52,10 @@ for (var i = 0, j = 10; i <= j; i++) {
 source: https://www.i-programmer.info/programming/javascript/6524-the-confusing-comma-in-javascript.html
 
 ---
+
+# Unary operators 
+A unary operation is an operation with only one operand. This operand comes either before or after the operator.
+
+Unary operators are more efficient than standard JavaScript function calls. Additionally, unary operators can not be overridden, therefore their functionality is guaranteed.
+![image](https://user-images.githubusercontent.com/13255701/159535525-8f594e70-230b-493a-bb72-08c21abb1788.png)
+
