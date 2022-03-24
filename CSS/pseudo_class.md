@@ -37,4 +37,15 @@ Ainsi dans un code:
  
 
    
-   
+# not()
+
+negation pseudo-class! Compte pareil que les autres pseudo class dans la spécificité
+
+* peut se combiner avec d'autres pseudo classes: 
+   div:nth-child(2):not(:first-of-type) /* selectionne les divs qui sont deuxième enfant à condition qu'ils ne soient pas le premier de leur type */
+* les not() ne peuvent pas être nestés 
+
+# first-of-type
+
+* selectionne le premier de type **parmi des frères et soeurs** ! ça s'applique donc à chaque niveau de l'arbre, à chaque branche
+
