@@ -3,3 +3,6 @@ Pour le CSS 3, ils ont pris une approche modulaire, qui remplace ou étend progr
 
 C'est franchement mal organisé, mais les spécifications sont claires: 
 https://www.w3.org/TR/CSS/ 
+
+
+* pour savoir ce qui est implanté dans la plupart des browsers moderne, il faut se référer aux **recommandations**
