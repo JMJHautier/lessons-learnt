@@ -23,3 +23,13 @@ Alternatively you could use a standard html list but then use js to allow select
 https://www.sitepoint.com/community/t/how-to-insert-an-icon-inside-of-a-select-list/356568/2
 
 also consider react-select 
+
+# landmark element
+
+Les "landmark elements" sont des éléments comme header / main / nav qui posent la structure fondamentale de la page. faut pas en abuser, car ils sont plus "efficace" quand utilisés avec parcimonie. 
+
+# meter element
+
+très cool! The <meter> HTML element represents either a scalar value within a known range or a fractional value.
+  
+  ![image](https://user-images.githubusercontent.com/13255701/160279055-6f1caa81-a5a9-4905-a9b8-1927ed76397e.png)
