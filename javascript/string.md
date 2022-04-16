@@ -6,3 +6,12 @@ let string = `
  Ronald Weasley
  Neville Longbottom
  `
+
+# Séparer les mots d'une phrase: 
+
+```javascript
+const string = "Hello there"
+const split = string.split(" ") 
+// ["Hello", "there"]
+```
+
