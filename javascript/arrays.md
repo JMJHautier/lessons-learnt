@@ -67,3 +67,8 @@ aussi: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-ja
 
 utiliser le % avec filter!
 const newArrray = oldArray.filter((element, index) => index%2 === 0)
+
+
+# renvoyer l'index de al valeur la plus grande
+
+`arr.indexOf(Math.max(...arr))`
