@@ -109,3 +109,23 @@ ngOnInit semble être l'équivalent d'un useEffect avec une dependency vide.
  
  the component's TEMPLATE is its html file. 
  
+ #
+ 
+    #variable declaration
+
+() - event binding
+
+[] - property binding
+
+[()] - two-way property binding
+
+{{ }} - interpolation
+
+* - structural directives
+
+The # syntax can declare local variable names which references DOM objects in a template. e.g.
+
+ <span [hidden]="harry.value">*</span>
+ <input type="text" #harry>
+ {{ harry.value }}
+
