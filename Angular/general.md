@@ -123,6 +123,8 @@ ngOnInit semble être l'équivalent d'un useEffect avec une dependency vide.
 
 * - structural directives
 
+ The $ is a convention that indicates heroes$ is an Observable, not an array.
+
 The # syntax can declare local variable names which references DOM objects in a template. e.g.
 
  <span [hidden]="harry.value">*</span>
