@@ -8,3 +8,8 @@ https://www.npmjs.com/package/windups
 
 UI accerssibilité
 https://www.radix-ui.com/docs/primitives/overview/introduction
+
+
+Pour tester sur différents webbrwoser: 
+
+https://saucelabs.com
