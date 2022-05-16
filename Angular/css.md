@@ -16,3 +16,11 @@ les fichiers css à l'intérieur des modules, par ex :
 
 contrairement à React, les styles ne sont pas réunies dans un seul grand fichier css qui est accessible partout.
 
+# scoped CSS
+
+pour impacter le composant dans son entier: 
+
+`:host {
+
+}
+`
