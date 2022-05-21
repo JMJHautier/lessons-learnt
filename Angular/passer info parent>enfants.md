@@ -26,3 +26,18 @@ permet de transmettre du HTML!
 ## ajouter l'élément "ng-content" dans l'élément enfant
 
 `<ng-content> </ng-content>`
+
+### multi slot content projection! 
+
+permet de spécifier l'emplacement de certains tags! 
+```javascript
+    <app-enfant> 
+      <p> mon contenu </p> 
+      <p select="top"> mon header </p>
+    </app-enfant>
+```
+
+et ensuite, dans `enfant`
+
+    <ng-content top> </ng-content> // mon header
+    <ng-content> </ng-content> // mon contenu
