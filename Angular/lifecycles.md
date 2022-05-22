@@ -16,7 +16,7 @@ après Init et chaque onChanges - doit e^tre utilisé pour checké des propriét
 # OnDestroy
 
 à la destruction...
-
+Utile pour "unregistered" des éléments et éviter des memory leaks
 
 
 Il y a ensuite tous les hooks liés aux **enfants**
