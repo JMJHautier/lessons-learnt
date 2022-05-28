@@ -22,7 +22,6 @@ Utiliser un array de Validators
 <input
   [formControl]="control"
   [type]="type"
-  class="block w-full py-1.5 px-3 text-gray-200 border border-gray-400 transition duration-500 focus:outline-none rounded bg-transparent focus:border-indigo-400"
   [placeholder]="placeholder"
   [mask]="format"
 />    
@@ -36,8 +35,7 @@ Utiliser un array de Validators
 />
   
         <p
-    *ngIf="control.touched && control.dirty && control.errors?.required"
-    class="text-red-400"
+    *ngIf="control.touched && control.dirty && control.errors?.required" // on vérifie si: il y a des erreurs, le formulaire a été touché, le formulaire a été modifié
   >
     Field is required
   </p>
@@ -64,3 +62,37 @@ Utiliser un array de Validators
   # ngSubmit
   
   comme (submit) sauf qu'elle prevent.eventDefault() (donc on l'utilise)
+ 
+ 
+ # template form
+ 
+ une façon de créer des formulaires qui sont paramétrés presque exclusivement à l'intérieur du template
+ 
+ ## FormGroup 
+ les template form sont générés via la directive `ngForm`. Cette directive est appliquée automatiquement à tous les <form> quand le `FormModule` est importée.
+ 
+Elle crée un `FormGroup`, comme les reactive forms, avec les mêmes propriétés.
+ 
+
+ ## FormControl
+ 
+ ngModel crée un FormControl (comme dans ReactiveForm)
+ 
+ ## validation
+ 
+ Les validations passent à travers les tags HTML 5, que angular reconnait et supplante ensuite.
+  **ne pas oublier l'attribut "name" à l'input concerné!** 
+
+ ## exemple: 
+ 
+ ```html
+ <input
+      #email="ngModel"
+      type="email"
+      name="email" // ne pas oublier le name! 
+      [(ngModel)]="credentials.email" // string vide, déclaré dans la class"
+
+      required
+      pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" // attention au format du pattern (supprimer les /...) 
+    />
+ ``` 
