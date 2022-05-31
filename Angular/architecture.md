@@ -1,6 +1,6 @@
 
 
-Principe général: 
+# Principe général: 
 
 An Angular app is made of COMPONENTS. COMPONENTS define the VIEWS (elements on screen). COMPONENTS are made of MODULES (NgModules) which themselves are made of functional sets. 
 
@@ -11,4 +11,10 @@ COMPONENTS, MODULES, and SERVICES are classes. They all use DECORATORS which mar
 
 
 The view is first defined in the TEMPLATE. The template combine HTML with angular DIRECTIVES (e.g. (click)) and binding (e.g. [mavariable])
+
+# organisation physique
+
+avoir un dossier "shared" avec son module
+
+avoir un dossier pour chaque "feature", avec son module et son composant container à la racine
 
