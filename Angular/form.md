@@ -1,6 +1,6 @@
 # Créer un formulaire
 
-<GroupForm> contenant des <FormControl>
+`<GroupForm>` contenant des `<FormControl>`
 
 Attention! GroupForm attribue un type différent à FormControl! Il vaut mieux définir les FormControl en dehors de groupForm (voir plus bas)
 
