@@ -18,3 +18,6 @@ avoir un dossier "shared" avec son module
 
 avoir un dossier pour chaque "feature", avec son module et son composant container à la racine
 
+# éviter d'avoir des modules avec des répétitions
+
+on peut utiliser le module.shared pour importer les modules communs à plusieurs modules. Il faut importer et exporter. 
