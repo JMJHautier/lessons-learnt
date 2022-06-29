@@ -44,3 +44,8 @@ l'équivalent de fetch("GET", URL) pour angular est:
         };
       }
    ```
+## post
+
+Il faut subbscribe à l'observable renvoyé par POST afin d'effectuer la requête!! Même si on ne fait rien avec les données renvoyés par le subscribe, c'est une étape nécessaire.
+
+Exemple:     `this.http.post('http://localhost:8000/meditation', formData.value).subscribe((data)=> console.log(data))`
