@@ -52,3 +52,21 @@ $color-confirm-light: color.adjust($color-text-alt, $blackness: 5%);
    height: $height;
    }
 ```
+
+# appeler un mixin avec seulement un paramètre parmi plusieurs
+
+Il faut faire référence au dit-paramètre: 
+le mixin: 
+```css
+@mixin propertiesGridLayout($clNumber: 2, $clWidth: 1fr, $gridGap: $padding) {
+  display: grid;
+  grid-template-columns: repeat($clNumber, $clWidth);
+  grid-template-rows: auto;
+  grid-column-gap: $gridGap;
+}
+``` 
+
+l'appel du mixin avec 1 paramètre sur 3: 
+```css
+@include side-data-layout.propertiesGridLayout($gridGap:3.5rem);
+```
