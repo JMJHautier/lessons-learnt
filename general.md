@@ -19,3 +19,11 @@ https://www.javatpoint.com/compile-time-vs-runtime
 # binary
 Le binaire est là à cause des transistors ;)
 compter en binary: https://www.youtube.com/watch?v=puaaRoWL-Ec
+
+
+# la console met à jour les objets!!
+
+imaginons
+`console.log(monObjet)`
+
+si monObjet change de valeur après le consol.log, la valeur mise à jour sera indiquée, et pas la valeur au moment du console.log! Peut poser de gros soucis quand on cherche à régler des problèmes liés à l'asynchronité! 
