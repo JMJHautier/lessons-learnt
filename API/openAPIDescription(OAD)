@@ -1,0 +1,18 @@
+usually in YAML, because it allows for comments, and is a bit shorter, but can be done in JSON.
+Both can be mixed, but usually you don't, except for stuff like arrays: 
+```yaml
+  arrayOfNumbers: [ 1, 2, 3 ] # Abbreviated array representation
+```
+should expand on the info object:
+https://spec.openapis.org/oas/v3.1.0#info-object
+
+## endpoint lists
+
+EndEndpoint / Path Item Object > /operation Object (put, get post (predefined)
+
+
+
+
+
+
+
